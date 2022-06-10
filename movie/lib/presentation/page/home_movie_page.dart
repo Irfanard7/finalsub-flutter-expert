@@ -14,7 +14,7 @@ class HomeMoviePage extends StatefulWidget {
 
   @override
   _HomeMoviePageState createState() => _HomeMoviePageState();
-  static const ROUTE_NAME = '/home-movie';
+  static const ROUTE_NAME = '/home';
 }
 
 class _HomeMoviePageState extends State<HomeMoviePage> {
