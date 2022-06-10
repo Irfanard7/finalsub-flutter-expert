@@ -33,8 +33,8 @@ void main() {
       // arrange
       when(mockHttpClient
               .get(Uri.parse('$BASE_URL/movie/now_playing?$API_KEY')))
-          .thenAnswer((_) async => http.Response(
-              readJson('dummy/now_playing_movie.json'), 200));
+          .thenAnswer((_) async =>
+              http.Response(readJson('dummy/now_playing_movie.json'), 200));
       // act
       final result = await dataSource.getNowPlayingMovies();
       // assert
@@ -152,8 +152,8 @@ void main() {
       // arrange
       when(mockHttpClient
               .get(Uri.parse('$BASE_URL/movie/$tId/recommendations?$API_KEY')))
-          .thenAnswer((_) async => http.Response(
-              readJson('dummy/recommendations_movie.json'), 200));
+          .thenAnswer((_) async =>
+              http.Response(readJson('dummy/recommendations_movie.json'), 200));
       // act
       final result = await dataSource.getMovieRecommendations(tId);
       // assert

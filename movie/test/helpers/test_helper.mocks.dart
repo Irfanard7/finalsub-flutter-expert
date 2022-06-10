@@ -215,8 +215,6 @@ class MockDatabaseHelperMovie extends _i1.Mock
               returnValue: Future<List<Map<String, dynamic>>>.value(
                   <Map<String, dynamic>>[]))
           as _i5.Future<List<Map<String, dynamic>>>);
-
-  removeWatchlist(_i3.MovieTable testMovieTable) {}
 }
 
 /// A class which mocks [GetNowPlayingMovie].
